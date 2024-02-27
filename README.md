@@ -7,9 +7,7 @@ To develop a neural network regression model for the given dataset.
 ## THEORY
 
 A neural network regression model is a type of artificial neural network designed for predicting continuous numerical values. It consists of an input layer, hidden layers with activation functions, and an output layer without activation for regression tasks.
-
 Training involves minimizing a loss function, typically mean squared error, using optimization algorithms like stochastic gradient descent. The model learns patterns in input data to make accurate predictions. 
-
 Hyperparameters like the number of layers and neurons influence the model's complexity. Regularization techniques, such as dropout, can prevent overfitting. Neural network regression is widely used in diverse fields, including finance, science, and engineering.
 
 ## Neural Network Model
@@ -65,6 +63,7 @@ from tensorflow.keras.metrics import RootMeanSquaredError as rmse
 import pandas as pd
 import matplotlib.pyplot as plt
 ```
+
 ## Authenticate & Create Dataframe using Data in Sheets:
 ```python
 auth.authenticate_user()
@@ -78,11 +77,13 @@ df = pd.DataFrame(rows[1:], columns=rows[0])
 df = df.astype({'Input':'float'})
 df = df.astype({'Output':'float'})
 ```
+
 ## Assign X and Y values:
 ```python
 x = df[["Input"]] .values
 y = df[["Output"]].values
 ```
+
 ## Normalize the values & Split the data:
 ```python
 scaler = MinMaxScaler()
@@ -90,6 +91,7 @@ scaler.fit(x)
 x_n = scaler.fit_transform(x)
 x_train,x_test,y_train,y_test = train_test_split(x_n,y,test_size = 0.3,random_state = 3)
 ```
+
 ## Create a Neural Network & Train it:
 ```python
 ai_brain = Seq([
