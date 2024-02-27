@@ -128,6 +128,7 @@ ai_brain.predict(x_n_n)
 ### Test Data Root Mean Squared Error
 ![Screenshot 2024-02-27 234131](https://github.com/lokeshrahulv/basic-nn-model/assets/118423842/eea78319-974e-4e51-8c2a-76ce7390e1bb)
 ### New Sample Data Prediction
+
 ![image](https://github.com/lokeshrahulv/basic-nn-model/assets/118423842/abc3795f-d1e7-434f-a1d9-00636d7f4843)
 ## RESULT
 Thus to develop a neural network regression model for the dataset created is successfully executed.
